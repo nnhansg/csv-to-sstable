@@ -143,7 +143,9 @@ public class Bulkload
 			case "boolean":
 				return Boolean.parseBoolean(value);
       case "decimal":
-        return new BigDecimal(value);
+        return Double.parseDouble(value);
+			case "double":
+        return Double.parseDouble(value);
       case "bigint":
         Long.parseLong(value);
 			case "timeuuid":
